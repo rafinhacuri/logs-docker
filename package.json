@@ -1,0 +1,35 @@
+{
+  "name": "logs-docker",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "description": "system that collects all the logs from running dockers and sends them to telegram and discord",
+  "author": {
+    "name": "Rafael Curi",
+    "email": "rafael@curi.dev.br",
+    "url": "https://curi.dev.br"
+  },
+  "license": "MIT",
+  "funding": "https://github.com/rafinhacuri/",
+  "homepage": "https://git.cbpf.br/rafaelcuri/logs-docker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.cbpf.br/rafaelcuri/logs-docker.git"
+  },
+  "bugs": "https://git.cbpf.br/rafaelcuri/logs-docker/-/issues",
+  "keywords": [
+    "discord",
+    "logs",
+    "docker",
+    "telegram"
+  ],
+  "scripts": {
+    "docker:build": "docker build --platform=linux/amd64 -t mizle/logs-docker:latest -t mizle/logs-docker:$(node -p \"require('./package.json').version\") .",
+    "docker:push": "docker push mizle/logs-docker:latest && docker push mizle/logs-docker:$(node -p \"require('./package.json').version\")",
+    "release": "bumpp && pnpm docker:build && pnpm docker:push"
+  },
+  "devDependencies": {
+    "bumpp": "^10.2.3"
+  }
+}
