@@ -1,47 +1,66 @@
-## 🚀 Setup
+# 🐳 Logs-Docker Setup Guide
 
-Follow the steps below to get the project up and running:
-
----
-
-### 1. Install Docker & Docker Compose
-Make sure you have Docker and Docker Compose installed on your system.  
-👉 Follow the official guide: [Docker Installation](https://docs.docker.com/get-started/get-docker/)
+Welcome to **Logs-Docker** — a lightweight environment to get your logging stack up and running quickly with Docker.  
 
 ---
 
-### 2. Create `docker-compose.yml`
-Download the provided example configuration:
+## ✅ Quick Start Checklist
+
+### 🔧 Step 1 — Install Prerequisites
+- [ ] Install **Docker**  
+- [ ] Install **Docker Compose**  
+👉 Official guide: [Get Docker](https://docs.docker.com/get-started/get-docker/)
+
+---
+
+### 📦 Step 2 — Get the `docker-compose.yml`
+Choose one of the options below to download the configuration file:
+
+<details>
+<summary>🔽 Using curl</summary>
 
 ```bash
-# Using curl
 curl -L -o docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
+```
+</details>
 
-# Or using wget
+<details>
+<summary>🔽 Using wget</summary>
+
+```bash
 wget -O docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
 ```
+</details>
 
-> 💡 Alternatively, you can copy the contents directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yml).
+Alternatively, copy it directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yml).
 
 ---
 
-### 3. Create `.env` file
-Set up your environment variables by downloading the example `.env`:
+### 📝 Step 3 — Configure Environment
+Download and prepare your `.env` file:
+
+<details>
+<summary>🔽 Using curl</summary>
 
 ```bash
-# Using curl
 curl -L -o .env https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/.env.example
+```
+</details>
 
-# Or using wget
+<details>
+<summary>🔽 Using wget</summary>
+
+```bash
 wget -O .env https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/.env.example
 ```
+</details>
 
-> ⚙️ Edit the `.env` file to match your environment (database, ports, etc.).
+Then **edit the `.env`** with your database, ports, and other settings.
 
 ---
 
-### 4. Start the Services
-Pull and start all containers:
+### 🚀 Step 4 — Launch Services
+Run the following commands:
 
 ```bash
 docker compose pull
@@ -50,18 +69,20 @@ docker compose up -d --force-recreate
 
 ---
 
-### 5. Verify Installation
-Check that everything is running correctly:
+### 🔍 Step 5 — Verify Installation
+Check running containers:
 
 ```bash
 docker compose ps
 ```
 
-If all services show as `Up`, your setup is complete ✅
+If all services show as `Up`, you’re ready! 🎉
 
 ---
 
-## 📝 License
+## 📜 License
 
-This project is licensed under the [MIT License](https://github.com/rafinhacuri/logs-docker/blob/main/LICENSE).  
-Copyright © 2025 [Rafael Curi Leonardo](https://github.com/rafinhacuri)
+> Licensed under the [MIT License](https://github.com/rafinhacuri/logs-docker/blob/main/LICENSE)  
+> © 2025 [Rafael Curi Leonardo](https://github.com/rafinhacuri)  
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
