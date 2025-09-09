@@ -10,18 +10,18 @@ Make sure you have Docker and Docker Compose installed on your system.
 
 ---
 
-### 2. Create `docker-compose.yaml`
+### 2. Create `docker-compose.yml`
 Download the provided example configuration:
 
 ```bash
 # Using curl
-curl -L -o docker-compose.yaml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yaml
+curl -L -o docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
 
 # Or using wget
-wget -O docker-compose.yaml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yaml
+wget -O docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
 ```
 
-> 💡 Alternatively, you can copy the contents directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yaml).
+> 💡 Alternatively, you can copy the contents directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yml).
 
 ---
 
