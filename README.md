@@ -13,14 +13,14 @@ Welcome to **Logs-Docker** — a lightweight environment to get your logging sta
 
 ---
 
-### 📦 Step 2 — Get the `docker-compose.yml`
+### 📦 Step 2 — Get the `docker-compose.yaml`
 Choose one of the options below to download the configuration file:
 
 <details>
 <summary>🔽 Using curl</summary>
 
 ```bash
-curl -L -o docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
+curl -L -o docker-compose.yaml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yaml
 ```
 </details>
 
@@ -28,11 +28,11 @@ curl -L -o docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs
 <summary>🔽 Using wget</summary>
 
 ```bash
-wget -O docker-compose.yml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yml
+wget -O docker-compose.yaml https://raw.githubusercontent.com/rafinhacuri/logs-docker/main/docker-compose.yaml
 ```
 </details>
 
-Alternatively, copy it directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yml).
+Alternatively, copy it directly from the [example file](https://github.com/rafinhacuri/logs-docker/blob/main/docker-compose.yaml).
 
 ---
 
