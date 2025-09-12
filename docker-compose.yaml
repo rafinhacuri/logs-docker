@@ -1,7 +1,8 @@
 services:
   logs-docker:
-    image: mizle/logs-docker::latest
+    image: mizle/logs-docker:latest
     container_name: logs-docker
+    platform: linux/amd64
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - DISCORD_CHANNEL=${DISCORD_CHANNEL}
